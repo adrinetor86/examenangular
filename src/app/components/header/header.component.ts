@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {ServicesCubo} from '../../../services/ServicesCubo';
+import {ServicesCubo} from '../../services/ServicesCubo';
 import {Subscription} from 'rxjs';
-import {ServiceAuth} from '../../../services/ServiceAuth';
+import {ServiceAuth} from '../../services/ServiceAuth';
 import {Router} from '@angular/router';
 
 @Component({

@@ -1,9 +1,10 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Compra} from '../models/compra';
-import {environment} from '../environments/environment';
+
+import {environment} from '../../environments/environment';
 import {ServiceAuth} from './ServiceAuth';
+import {Compra} from '../models/compra';
 
 
 @Injectable()

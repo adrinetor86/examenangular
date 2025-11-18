@@ -1,8 +1,8 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Cubo} from '../../../../models/cubo';
-import {ServicesCubo} from '../../../../services/ServicesCubo';
-import {ServiceCompra} from '../../../../services/ServiceCompra';
-import {ServiceAuth} from '../../../../services/ServiceAuth';
+import {ServicesCubo} from '../../../services/ServicesCubo';
+import {ServiceCompra} from '../../../services/ServiceCompra';
+import {ServiceAuth} from '../../../services/ServiceAuth';
 
 @Component({
   selector: 'app-create-compra',

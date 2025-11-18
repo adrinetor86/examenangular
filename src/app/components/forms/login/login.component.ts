@@ -1,7 +1,7 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {Router} from '@angular/router';
-import {ServiceAuth} from '../../../../services/ServiceAuth';
-import {ServiceUser} from '../../../../services/ServiceUser';
+import {ServiceAuth} from '../../../services/ServiceAuth';
+import {ServiceUser} from '../../../services/ServiceUser';
 
 @Component({
   selector: 'app-login',
