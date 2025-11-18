@@ -1,0 +1,25 @@
+<div class="d-flex justify-content-center align-content-center">
+  <h2>user1@mail.com</h2>
+  <h2>12345</h2>
+  <div class= "align-content-center w-25">
+    <div class="card text-center border-primary border-1 rounded-4">
+      <h1 class="text-primary">Login</h1>
+      <div class="card-body p-4 p-md-5 d-flex justify-content-center text-center">
+        <form ngForm="ngForm">
+
+          <div class="mb-2">
+            <label for="idUser" class="form-label">Username</label>
+            <input type="text" id="idUser" name="cajaUser" #cajaUser class="form-control">
+          </div>
+
+          <div class="mb-2">
+            <label for="idPass" class="form-label">Password</label>
+            <input type="text" id="idPass" name="cajaPass" #cajaPass class="form-control">
+          </div>
+
+          <button class="btn btn-primary" (click)="login()">Iniciar Sesión</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>ID Cubo</th>
+    <th>ID Pedido</th>
+    <th>ID User</th>
+    <th>Fecha</th>
+  </tr>
+  </thead>
+  <tbody>
+  @for(pedido of arrCompras;track pedido){
+    <tr>
+      <td>{{pedido.idCubo}}</td>
+      <td>{{pedido.idPedido}}</td>
+      <td>{{pedido.idUsuario}}</td>
+      <td>{{pedido.fechaPedido}}</td>
+    </tr>
+  }
+
+  </tbody>
+</table>
