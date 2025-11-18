@@ -18,6 +18,11 @@ export class ServicesCubo {
       return this._http.get<Array<Cubo>>(url)
   }
 
+  getCuboById(id:number):Observable<any>{
+    let url= environment.urlApi+"api/Cubos/"+id
+
+    return this._http.get(url)
+  }
   getCubosByMarca(marca:string):Observable<Array<Cubo>>{
     let url=environment.urlApi+"api/Cubos/CubosMarca/"+marca
 

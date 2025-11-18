@@ -5,6 +5,7 @@ import {Observable} from 'rxjs';
 import {environment} from '../environments/environment';
 import {ServiceAuth} from './ServiceAuth';
 import {Compra} from '../models/compra';
+import {Cubo} from '../models/cubo';
 
 
 @Injectable()
@@ -26,12 +27,12 @@ export class ServiceCompra{
     return this._http.get<Array<Compra>>(url,{headers:headers})
   }
 
-  realizarCompra(idCubo:number):Observable<any>{
+  realizarCompra(cubo:Cubo,idCubo:number):Observable<any>{
     let url=environment.urlApi+"api/Compra/InsertarPedido/"+idCubo;
 
     const headers={"Content-Type":"application/json",
       "Authorization":"Bearer " + localStorage.getItem("authToken")};
-
-    return this._http.post(url,{headers:headers})
+      const body=JSON.stringify(cubo);
+    return this._http.post(url,body,{headers:headers})
   }
 }
