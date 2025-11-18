@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 
-import {environment} from '../../environments/environment';
+import {environment} from '../environments/environment';
 import {ServiceAuth} from './ServiceAuth';
 import {Compra} from '../models/compra';
 

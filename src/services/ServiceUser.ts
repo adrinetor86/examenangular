@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {ServicesCubo} from './ServicesCubo';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {environment} from '../../environments/environment';
+import {environment} from '../environments/environment';
 import {Profile} from '../../models/profile';
 
 

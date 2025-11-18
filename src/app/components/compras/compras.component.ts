@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {ServiceCompra} from '../../services/ServiceCompra';
+import {ServiceCompra} from '../../../services/ServiceCompra';
 import {Compra} from '../../../models/compra';
-import {ServiceAuth} from '../../services/ServiceAuth';
+import {ServiceAuth} from '../../../services/ServiceAuth';
 import {Router} from '@angular/router';
 
 @Component({

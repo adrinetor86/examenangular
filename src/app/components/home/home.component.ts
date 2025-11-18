@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ServicesCubo} from '../../services/ServicesCubo';
+import {ServicesCubo} from '../../../services/ServicesCubo';
 import {Cubo} from '../../../models/cubo';
 
 @Component({
