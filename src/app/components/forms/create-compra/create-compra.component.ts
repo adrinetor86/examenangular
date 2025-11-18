@@ -28,7 +28,7 @@ export class CreateCompraComponent implements OnInit {
 
   comprar(){
 
-    this.cuboEscogido=this.cajaSel.nativeElement.value
+    this.cuboEscogido=parseInt(this.cajaSel.nativeElement.value)
 
     this.serviceCompra.realizarCompra(this.cuboEscogido).subscribe(data=>{
       console.log(data);
